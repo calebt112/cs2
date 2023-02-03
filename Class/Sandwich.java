@@ -18,10 +18,7 @@ public class Sandwich {
     }
 
     public boolean isHealthy(){
-        if(calories > 250)
-            return false;
-        else
-            return true;
+        return calories <= 250;
     }
 
     @Override
