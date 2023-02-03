@@ -1,1 +1,1 @@
-# This is my collection of work of CS 2050.
+# This is my collection of work for CS 2050.
