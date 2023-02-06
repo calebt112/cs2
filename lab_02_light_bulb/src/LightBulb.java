@@ -34,7 +34,10 @@ class LightBulb {
     }
 
     public boolean isOn() {
-        return on;
+        if (on)
+            return true;
+        else
+            return false;
     }
 
     public void turnOn() {
@@ -135,6 +138,7 @@ class RoomFrame extends JFrame implements ActionListener, ChangeListener {
 
             lightBulb.turnOn();
             int lumens = lightBulb.getLumens();
+
             if(lightBulb instanceof DimmableLightBulb)
                 DimmableLightBulb.lumens = DimmableLightBulb.dimmer;
 

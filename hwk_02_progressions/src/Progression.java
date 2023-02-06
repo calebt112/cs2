@@ -82,29 +82,22 @@ class GeometricProgression extends Progression {
 class FibonacciProgression extends Progression {
 
     protected static final double DEFAULT_VALUE = 1;
-    static double value;
+
+    private static double value, pvalue, temp;
 
     FibonacciProgression(){
         value = DEFAULT_VALUE;
-    }
-
-    private static double fibo(double value){
-        if (value <= 2)
-            return 1;
-        else
-            return fibo(value-1) + fibo(value-2);
+        pvalue= 0;
     }
     @Override
     public double getValue() {
-        return value;
+        return  value;
     }
 
     @Override
-    void next(){
-        if (value <= 2)
-            value = 1;
-        else
-            value = FibonacciProgression.next(value-1) + next(value-2);
+    void next() {
+        temp = value;
+       value = value + pvalue;
+       pvalue = temp;
     }
 }
-

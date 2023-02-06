@@ -23,10 +23,7 @@ public class Example3 {
             a = b;
             b = an;
         }
-
-        for (int i = 1; i <= 10; i++){
-            System.out.println(fibo(i));
-        }
-
+        System.out.println("a_" + n + " = " + b);
+        System.out.println("a_" + n + " = " + fibo(n));
     }
 }
