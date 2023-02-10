@@ -30,43 +30,52 @@ class ArithmeticProgression extends Progression {
     protected static final double DEFAULT_VALUE = 0;
     protected static final double DEFAULT_DIFFERENCE = 1;
 
-    double difference;
+    double value, difference;
 
     ArithmeticProgression(double value, double difference) {
-        if (value < 0)
-            this.value = DEFAULT_VALUE;
-        else
-            this.value = value;
-        if (difference < 1)
-            this.difference = DEFAULT_DIFFERENCE;
-        else
-            this.difference = difference;
+        this.value = value;
+        this.difference = difference;
     }
 
-    ArithmeticProgression(double difference) {
-        this.value = DEFAULT_VALUE;
-        if (difference < 1)
-            this.difference = DEFAULT_DIFFERENCE;
-        else
-            this.difference = difference;
+    ArithmeticProgression() {
+        value = DEFAULT_VALUE;
+        difference = DEFAULT_DIFFERENCE;
     }
 
+    @Override
+    public double getValue() {
+        return value;
+    }
 
     @Override
     void next() {
-
+        value += difference;
     }
 }
-
 
 class GeometricProgression extends Progression {
 
     protected static final double DEFAULT_VALUE = 1;
     protected static final double DEFAULT_RATIO = 2;
+    static double value, ratio;
+    GeometricProgression(double value, double ratio){
+        this.value = value;
+        this.ratio = ratio;
+    }
+
+    GeometricProgression(){
+        ratio = DEFAULT_RATIO;
+        value = DEFAULT_VALUE;
+    }
+
+    @Override
+    public double getValue() {
+        return value;
+    }
 
     @Override
     void next() {
-
+       value *= ratio;
     }
 }
 
@@ -74,9 +83,21 @@ class FibonacciProgression extends Progression {
 
     protected static final double DEFAULT_VALUE = 1;
 
+    private static double value, pvalue, temp;
+
+    FibonacciProgression(){
+        value = DEFAULT_VALUE;
+        pvalue= 0;
+    }
+    @Override
+    public double getValue() {
+        return  value;
+    }
+
     @Override
     void next() {
-
+        temp = value;
+       value = value + pvalue;
+       pvalue = temp;
     }
 }
-
