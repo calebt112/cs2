@@ -6,9 +6,6 @@
  */
 
 import org.junit.jupiter.api.Test;
-
-import java.sql.SQLOutput;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 class BagTest {
@@ -59,17 +56,6 @@ class BagTest {
         assertFalse(bag.remove(new Item("bla")));
         assertFalse(bag.removeAll(new Item("bla")));
     }
-
-
-    @Test
-    public void customTest(){
-        Bag bag = new Bag();
-        bag.add(new Item("bla", 10, 10));
-        System.out.println(bag.weight());
-        System.out.println(bag.weightLimit());
-        System.out.println(bag.isEmpty());
-    }
-
 
     @Test
     public void testSingleItemBag() {

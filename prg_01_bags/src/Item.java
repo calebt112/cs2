@@ -17,23 +17,22 @@ public class Item implements Comparable<Item> {
     // TODOd #1: set weight to MIN_WEIGHT if provided value is less than MIN_WEIGHT;
     // set price to MIN_PRICE if provided value is less than MIN_PRICE
     public Item(String description, double weight, int price) {
+        this.description = description;
         if(weight < MIN_WEIGHT)
             this.weight = MIN_WEIGHT;
         else
             this.weight = weight;
-
         if(price < MIN_PRICE)
             this.price = MIN_PRICE;
         else
             this.price = price;
-        this.description = description;
     }
 
     // TODOd #2: set weight to MIN_WEIGHT and price to MIN_PRICE
     public Item(String description) {
-        weight = MIN_WEIGHT;
-        price = MIN_PRICE;
         this.description = description;
+        this.weight = MIN_WEIGHT;
+        this.price = MIN_PRICE;
     }
 
     public String getDescription() {
