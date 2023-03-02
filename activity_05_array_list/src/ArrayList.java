@@ -1,8 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
- * Student Name: Thompson Caleb
- * Description: Homework 03 - ArrayList
+ * Description: Activity 05 - ArrayList
  */
 
 public class ArrayList<E> {
@@ -55,16 +54,16 @@ public class ArrayList<E> {
 
     // TODOd: add a new element (with the value) in front of the list!
     // if list is full, increase the capacity of the array by INITIAL_CAPACITY before adding
+
     public void add(E value) {
         if (isFull()) {
             E newData[] = (E[]) new Object[data.length + INITIAL_CAPACITY];
             // copy AND shift
-            for (int i = 0; i < data.length; i++)
+            for (int i = 0; i < data.length; i++) {
                 newData[i+1] = data[i];
             data = newData;
         }
         // just shift
-        else
             for (int i = size-1; i >= 0; i--)
                 data[i+1] = data[i];
         data[0] = value;
@@ -72,8 +71,7 @@ public class ArrayList<E> {
     }
 
     // TODOd: return a string representation of the array list
-    @Override
-    public String toString() {
+        public String toString() {
         String out = "";
         for (int i = 0; i < size; i++)
             out += data[i] + " ";
@@ -85,26 +83,53 @@ public class ArrayList<E> {
         return size;
     }
 
-    // TODOd #1: returns true if the given value is in the array list
-    public boolean contains(E value) {
-        for (int i = 0; i < size; i++)
-            if (data[i].equals(value))
-                return true;
-        return false;
+    // TODOd: return the element located at the given index
+    public E get(int index) {
+//        if(index < 0 || index >= size)                        //array index out of bounds thrown automatically.
+//            throw new ArrayIndexOutOfBoundsException();       // can insert own message ("Index out of bounds").
+        return data[index];
     }
 
-    // TODOd #2: reverses the array --- don't do it this way!
-    public void reverse(){
-        for(int i = 0; i < size/2; i++){
-            E temp = data[i];
-            data[i] = data[size - i - 1];
-            data[size - i - 1] = temp;
+    // TODOd: set value to location at index
+    public void set(int index, E value) {
+        data[index] = value;
+    }
+
+    // TODO: insert value at the given index location
+    // throw an exception if index is invalid
+    public void insert(int index, E value) {
+        if(index < 0 || index >= size)
+            throw new ArrayIndexOutOfBoundsException("Index out of bounds");
+
+        if (isFull()) {
+            E newData[] = (E[]) new Object[data.length + INITIAL_CAPACITY];
+
+            for (int i = 0; i < data.length; i++) {
+                newData[i+1] = data[i];
+                data = newData;
+            }
+            data[0] = value;
+            size++;
+
+        } else
+            for (int i = size-1; i >= index; i--)
+                data[i+1] = data[i];
+
+            data[index] = value;
+                        size++;
         }
+
+
     }
 
-    // TODOd #3: clears the array
-    public void clear() {
-        size = 0;
-        data = (E[]) new Object[INITIAL_CAPACITY];
+    // TODO: removes the element at the given index location
+    // throw an exception if index is invalid
+    public void remove(int index) {
+        if(index < 0 || index >= size)
+            throw new ArrayIndexOutOfBoundsException("Index out of bounds");
+        // shift only
+        for (int i = index; i < size-1; i++)
+            data[i] = data[i+1];
+        size--;
     }
 }

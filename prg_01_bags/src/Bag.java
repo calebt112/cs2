@@ -19,6 +19,8 @@ public class Bag {
     public Bag(double weightLimit) {
         if(weightLimit <= 0)
             this.weightLimit = DEFAULT_WEIGHT_LIMIT;
+        else
+            this.weightLimit = weightLimit;
         head = null;
         weight = 0;
     }
@@ -38,14 +40,19 @@ public class Bag {
         return false;
     }
 
-    // TODOd #6: return the (current) weight of the bag
+    // TODO #6: return the (current) weight of the bag
     public double weight() {
         Node<Item> current = head;
-        while(current != null){
-            weight += current.getValue().getWeight();
-            current = current.getNext();
+        double totalWeight = 0;
+        if(current == null)
+            return 0;
+        else {
+            while (current != null) {
+                totalWeight += current.getValue().getWeight();
+                current = current.getNext();
+            }
+            return totalWeight;
         }
-        return weight;
     }
 
     // TODOd #7: return the weight limit of the bag
@@ -53,7 +60,7 @@ public class Bag {
         return weightLimit;
     }
 
-    // TODO #8: add the given item to the bag only if it doesn't make the bag heavier than its weight limit;
+    // TODOd #8: add the given item to the bag only if it doesn't make the bag heavier than its weight limit;
     // item added always becomes the new head node; return true if operation is successful; false otherwise
     public boolean add(final Item item) {
         Node<Item> newNode = new Node<Item>(item);
@@ -66,7 +73,7 @@ public class Bag {
         }
     }
 
-    // TODO #9: return the total number of items in the bag
+    // TODOd #9: return the total number of items in the bag
     public int count() {
         Node<Item> current = head;
         int count = 0;
@@ -77,7 +84,7 @@ public class Bag {
         return count;
     }
 
-    // TODO #10: return the number of items that are equal to the given item
+    // TODOd #10: return the number of items that are equal to the given item
     public int count(final Item item) {
         Node<Item> current = head;
         int count = 0;
@@ -89,19 +96,23 @@ public class Bag {
         return count;
     }
 
-    // TODO #11: return the total price of the bag (i.e., the sum of the prices of all items in the bag);
+    // TODOd #11: return the total price of the bag (i.e., the sum of the prices of all items in the bag);
     // if the bag is empty, return zero
     public int price() {
         Node<Item> current = head;
-        int price = 0;
-        while(current != null){
-            price += current.getValue().getPrice();
-            current = current.getNext();
+        int total = 0;
+        if(current == null)
+            return 0;
+        else {
+            while (current != null) {
+                total += current.getValue().getPrice();
+                current = current.getNext();
+            }
+            return total;
         }
-        return price;
     }
 
-    // TODO #12: return a reference to the most pricey item in the bag;
+    // TODOd #12: return a reference to the most pricey item in the bag;
     // if the bag has multiple most pricey items, return the first one found;
     // if the bag is empty, return null
     public Item mostPricey() {
@@ -111,7 +122,7 @@ public class Bag {
            return null;
        else {
            while (current != null) {
-               if (current.getValue().compareTo(mostPricey.getValue()) < 0) {
+               if (current.getValue().compareTo(mostPricey.getValue()) > 0) {
                    mostPricey = current;
                    current = current.getNext();
                } else
@@ -136,26 +147,40 @@ public class Bag {
     // TODO #14: remove the first occurrence of the item from the bag;
     // return true if operation is successful; false otherwise
     public boolean remove(final Item item) {
+          Node<Item> current = head;
+          Node<Item> previous = null;
+          while(current != null){
+                if(current.getValue().equals(item)){
+                 if(previous == null)
+                      head = current.getNext();
+                 else
+                      previous.setNext(current.getNext());
+                 return true;
+                }
+                previous = current;
+                current = current.getNext();
+          }
+          return false;
+    }
+
+    // TODO #15: remove ALL occurrences of the item from the bag;
+    // return true if operation is successful; false otherwise
+    public boolean removeAll(final Item item) {
         Node<Item> current = head;
         Node<Item> previous = null;
+        boolean removed = false;
         while(current != null){
             if(current.getValue().equals(item)){
                 if(previous == null)
                     head = current.getNext();
                 else
                     previous.setNext(current.getNext());
-                current = current.getNext();
-                return true;
+                removed = true;
             }
+            previous = current;
             current = current.getNext();
         }
-        return false;
-    }
-
-    // TODO #15: remove ALL occurrences of the item from the bag;
-    // return true if operation is successful; false otherwise
-    public boolean removeAll(final Item item) {
-        return false;
+        return removed;
     }
 
     @Override
