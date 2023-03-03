@@ -3,7 +3,7 @@
  * Instructor: Thyago Mota
  * Description: Activity 06 - LinkedListDriver
  */
-
+import java.util.Iterator;
 public class LinkedListDriver {
     public static void main(String[] args) {
 
@@ -40,13 +40,9 @@ public class LinkedListDriver {
         ll.add(10);
         ll.add(13);
 
-
-        Iterator<Integer> it = ll.iterator();
-        while (true) {
-            Integer value = it.next();
-            if (value == null)
-                break;
-            System.out.println(value + " ");
+        for(Integer integer : ll){
+            System.out.print(integer + " ");
         }
+
     }
 }

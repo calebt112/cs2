@@ -147,20 +147,12 @@ public class Bag {
     // TODO #14: remove the first occurrence of the item from the bag;
     // return true if operation is successful; false otherwise
     public boolean remove(final Item item) {
-          Node<Item> current = head;
-          Node<Item> previous = null;
-          while(current != null){
-                if(current.getValue().equals(item)){
-                 if(previous == null)
-                      head = current.getNext();
-                 else
-                      previous.setNext(current.getNext());
-                 return true;
-                }
-                previous = current;
-                current = current.getNext();
-          }
-          return false;
+        Node<Item> current = head;
+        Node<Item> toRemove = null;
+        if(isEmpty())
+            return false;
+
+        if(current.getValue().equals(item) ==
     }
 
     // TODO #15: remove ALL occurrences of the item from the bag;
