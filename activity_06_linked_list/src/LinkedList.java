@@ -3,8 +3,9 @@
  * Instructor: Thyago Mota
  * Description: Activity 06 - LinkedList
  */
+import java.util.Iterator;
 
-public class LinkedList<E> {
+public class LinkedList<E> implements Iterable<E> {
 
     private Node<E> head;
 
@@ -124,9 +125,28 @@ public class LinkedList<E> {
         }
     }
 
+//    public Iterator<E> iterator() {
+//        Iterator<E> it = new Iterator(head);              ***DO NOT IMPLEMINT THIS WAY***
+//        return it;
+//        //return new Iterator(head);
+
     public Iterator<E> iterator() {
-        Iterator<E> it = new Iterator(head);
-        return it;
-        //return new Iterator(head);
+        return new Iterator<E>() {
+            private Node<E> current = head;
+
+            @Override
+            public boolean hasNext() {
+                return current != null;
+            }
+            @Override
+            public E next() {
+                if(current != null) {
+                    E value = current.getValue();
+                    current = current.getNext();
+                    return value;
+                }
+                return null;
+            }
+        };                      // don't forget the semicolon
     }
 }

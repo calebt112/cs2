@@ -1,7 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
- * Student(s) Name(s):
+ * Student(s) Name(s): Caleb Thompson
  * Description: Prg 01 - Item
  */
 
