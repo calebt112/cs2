@@ -5,7 +5,6 @@
  * Description: Prg 01 - Bag (a linked list of Item elements)
  */
 
-import java.util.Iterator;
 public class Bag {
 
     private Node<Item> head;        // the head of the list of items
