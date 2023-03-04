@@ -181,7 +181,6 @@ public class Bag {
     // return true if operation is successful; false otherwise
     public boolean removeAll(final Item item) {
         Node<Item> current = head;
-        Node<Item> toRemove = head;
         Node<Item> previous = head;
 
         if (isEmpty()) {
