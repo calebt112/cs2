@@ -1,6 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
+ * Student Name: Thompson Caleb
  * Description: Activity 06 - LinkedListDriver
  */
 
