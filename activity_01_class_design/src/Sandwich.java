@@ -23,4 +23,11 @@ public class Sandwich {
         else
             this.price = price;
     }
+
+    public boolean isHealthy() {
+        if(calories <= 250)
+            return true;
+        else
+            return false;
+    }
 }
