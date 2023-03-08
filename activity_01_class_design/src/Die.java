@@ -31,4 +31,9 @@ public class Die {
         value = (int)(Math.random() * sides) + 1;
         return value;
     }
+
+    @Override
+    public String toString() {
+        return "Die [sides=" + sides + ", value=" + getValue() + "]";
+    }
 }
