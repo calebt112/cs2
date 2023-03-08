@@ -22,4 +22,8 @@ public class Die {
         sides = 6;
         value = 1;
     }
+
+    public int getValue() {
+        return value;
+    }
 }
