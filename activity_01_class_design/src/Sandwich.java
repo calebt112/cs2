@@ -30,4 +30,9 @@ public class Sandwich {
         else
             return false;
     }
+
+    @Override
+    public String toString() {
+        return name + " " + calories + " " + price;
+    }
 }
