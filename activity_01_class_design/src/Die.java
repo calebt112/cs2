@@ -26,4 +26,9 @@ public class Die {
     public int getValue() {
         return value;
     }
+
+    public int roll(){
+        value = (int)(Math.random() * sides) + 1;
+        return value;
+    }
 }
