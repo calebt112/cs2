@@ -18,5 +18,20 @@ public class activityDriver {
         System.out.println(sandwich.isHealthy());
         // display sandwich
         System.out.println(sandwich);
+
+        // Die class method calls
+        // create a new die object
+        Die die = new Die();
+        // create a new die with 12 sides
+        Die die2 = new Die(12);
+        // display die
+        System.out.println(die);
+        System.out.println(die2);
+        // roll die
+        die.roll();
+        die2.roll();
+        // display die
+        System.out.println(die);
+        System.out.println(die2);
     }
 }
