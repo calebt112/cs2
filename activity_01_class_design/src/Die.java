@@ -5,4 +5,21 @@
  */
 
 public class Die {
+
+    private int sides;
+    private int value;
+    final int MIN_SIDES = 2;
+
+    public Die(int sides) {
+        if (sides <= MIN_SIDES)
+            this.sides = MIN_SIDES;
+        else
+            this.sides = sides;
+        value = 1;
+    }
+
+    public Die() {
+        sides = 6;
+        value = 1;
+    }
 }
