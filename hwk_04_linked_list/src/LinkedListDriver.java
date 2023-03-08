@@ -17,12 +17,8 @@ public class LinkedListDriver {
         pets.add("Rex");
         pets.add("Spots");
         pets.add("Sparky");
-
         System.out.println(pets);
-
         pets.reverse();
-
         System.out.println(pets);
-        
     }
 }
