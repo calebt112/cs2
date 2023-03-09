@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b181524c-948e-40be-9176-bed95aafefae" name="Changes" comment="Lab 4 completed" />
+    <list default="true" id="b181524c-948e-40be-9176-bed95aafefae" name="Changes" comment="Lab 4 completed">
+      <change beforePath="$PROJECT_DIR$/../prg_01_bags/out/production/prg_01_bags/Bag.class" beforeDir="false" afterPath="$PROJECT_DIR$/../prg_01_bags/out/production/prg_01_bags/Bag.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prg_01_bags/out/production/prg_01_bags/BagDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../prg_01_bags/out/production/prg_01_bags/BagDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prg_01_bags/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prg_01_bags/src/Item.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,13 +25,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/caleb/Desktop/CS2/cs2/lab_04_circular_list"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caleb/Desktop/CS2/cs2/lab_04_circular_list&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
