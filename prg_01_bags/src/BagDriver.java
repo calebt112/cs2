@@ -25,7 +25,7 @@ public class BagDriver {
         mybag.add(new Item("Tools", 10, 50));
 
         System.out.println(mybag);
-        System.out.println(mybag.mostPricey());
+        System.out.println("The most pricey item in my bag is: " + mybag.mostPricey());
         System.out.println("My bag has a firecracker: " + mybag.contains(new Item("Firecracker")));
 
     }
