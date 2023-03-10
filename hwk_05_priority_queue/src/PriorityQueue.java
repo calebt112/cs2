@@ -9,21 +9,20 @@ public class PriorityQueue<E extends HasPriority> extends LinkedList<E> {
 
     // TODO: finish the implementation of the method
     public void push(E value) {
-        if(isEmpty())
+        if (isEmpty())
             add(value);
-        else{
+        else {
             Node<E> newNode = new Node<>(value);
             Node<E> current = head;
             Node<E> previous = null;
-            while(current != null && current.getValue().getPriority() >= value.getPriority()){
+            while (current != null && current.getValue().getPriority() >= value.getPriority()) {
                 previous = current;
                 current = current.getNext();
             }
-            if(previous == null){
+            if (previous == null) {
                 newNode.setNext(head);
                 head = newNode;
-            }
-            else{
+            } else {
                 newNode.setNext(current);
                 previous.setNext(newNode);
             }
