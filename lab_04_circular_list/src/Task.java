@@ -38,6 +38,7 @@ public class Task {
      * @param size
      */
     public Task(int size) {
+        // this(size, STANDARD_PRIORITY); -- this uses the other construtor.
         if(size < MIN_TASK_SIZE)
             this.size = MIN_TASK_SIZE;
         else
