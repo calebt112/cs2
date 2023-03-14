@@ -29,9 +29,9 @@ public class CircularLinkedList<E> implements Iterable<E> {
             head = newNode;
             head.setNext(head);
         }
-        if(head.getNext() == head) {
-            head.setNext(newNode);
-            newNode.setNext(head);
+//         if(head.getNext() == head) {         ***NOT NECESSARY***
+//             head.setNext(newNode);
+//             newNode.setNext(head);
         }
         else {
             Node<E> current = head;
