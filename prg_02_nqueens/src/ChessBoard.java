@@ -34,17 +34,19 @@ public class ChessBoard {
 
     // TODO #4: set a queen at given location (i, j)
     public void setQueen(int i, int j) {
-
+        board[i][j] = true;
     }
 
     // TODO #5: return true/false depending whether there is a queen at the given location (i, j)
     public boolean hasQueen(int i, int j) {
-        return false;
+        return board[i][j];
     }
 
     // TODO #6: return true/false depending whether there is a queen at the given row
     public boolean hasQueen(int i) {
-        return false;
+        for(int j = 0; j < board.length; i++)
+            if(board[i][j])
+                return true;
     }
 
     // TODO (suggested): return true/false depending whether the chess board configuration passes the diagonal test
@@ -113,4 +115,3 @@ public class ChessBoard {
 //        System.out.println(cb2.size());
 //    }
 }
-
