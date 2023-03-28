@@ -47,6 +47,7 @@ public class ChessBoard {
         for(int j = 0; j < board.length; i++)
             if(board[i][j])
                 return true;
+        return false;
     }
 
     // TODO (suggested): return true/false depending whether the chess board configuration passes the diagonal test
@@ -60,6 +61,7 @@ public class ChessBoard {
     private boolean checkRowsColumns() {
         return false;
     }
+
     // TODO #7: return true/false depending whether the chess board is valid (i.e., no queen is attacking any other queen)
     public boolean isValid() {
         return false;

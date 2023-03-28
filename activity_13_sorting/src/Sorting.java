@@ -19,6 +19,7 @@ public class Sorting {
                     data[j+1] = temp;
                 }
             }
+            System.out.println(Arrays.toString(data));
         }
         // my way
 //        for(int n = data.length -1; n > 0; n--){
@@ -32,9 +33,22 @@ public class Sorting {
 //        }
     }
 
-    // TODO #2: implement the selection sort algorithm
+    // TODOd #2: implement the selection sort algorithm
     public static void selectionSort(int data[]) {
-        
+        for(int i = 0; i < data.length-1; i++){
+            int min = i;
+            for(int j = i+1; j < data.length; j++){
+                if(data[j] < data[min]){
+                    min = j;
+                }
+            }
+            if (min != i) {                 // if statement is for optimization. If the min is already in the correct position, then no need to swap
+                int temp = data[i];
+                data[i] = data[min];
+                data[min] = temp;
+            }
+            System.out.println(Arrays.toString(data));
+        }
     }
 
     // TODO #3: implement the insertion sort algorithm
@@ -67,8 +81,9 @@ public class Sorting {
          int data[] = {13, 12, 84, 79, 10, 77, 56, 1, 34, 27, 3};
         // perform various sorts using the different sorting algorithms implemented above
         System.out.println(Arrays.toString(data));
-        bubbleSort(data);
-        System.out.println(Arrays.toString(data));
+        //bubbleSort(data);
+        selectionSort(data);
+
     }
     
 }
