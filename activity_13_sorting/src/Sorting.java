@@ -8,9 +8,28 @@ import java.util.Arrays;
 
 public class Sorting {
 
-    // TODO #1: implement the bubble sort algorithm
+    // TODOd #1: implement the bubble sort algorithm
     public static void bubbleSort(int data[]) {
-        
+        // more conventional way
+        for(int i = 0; i < data.length -1; i++){
+            for(int j = 0; j < data.length - i - 1; j++){
+                if(data[j] > data[j+1]){
+                    int temp = data[j];
+                    data[j] = data[j+1];
+                    data[j+1] = temp;
+                }
+            }
+        }
+        // my way
+//        for(int n = data.length -1; n > 0; n--){
+//            for(int i = 0; i < n; i++){
+//                if(data[i] > data[i+1]){
+//                    int temp = data[i];
+//                    data[i] = data[i+1];
+//                    data[i+1] = temp;
+//                }
+//            }
+//        }
     }
 
     // TODO #2: implement the selection sort algorithm
@@ -47,6 +66,9 @@ public class Sorting {
     public static void main(String[] args) {
          int data[] = {13, 12, 84, 79, 10, 77, 56, 1, 34, 27, 3};
         // perform various sorts using the different sorting algorithms implemented above
+        System.out.println(Arrays.toString(data));
+        bubbleSort(data);
+        System.out.println(Arrays.toString(data));
     }
     
 }
