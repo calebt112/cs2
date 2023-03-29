@@ -32,17 +32,17 @@ public class ChessBoard {
         return board.length;
     }
 
-    // TODO #4: set a queen at given location (i, j)
+    // TODOd #4: set a queen at given location (i, j)
     public void setQueen(int i, int j) {
         board[i][j] = true;
     }
 
-    // TODO #5: return true/false depending whether there is a queen at the given location (i, j)
+    // TODOd #5: return true/false depending whether there is a queen at the given location (i, j)
     public boolean hasQueen(int i, int j) {
         return board[i][j];
     }
 
-    // TODO #6: return true/false depending whether there is a queen at the given row
+    // TODOd #6: return true/false depending whether there is a queen at the given row
     public boolean hasQueen(int i) {
         for(int j = 0; j < board.length; i++)
             if(board[i][j])
@@ -67,13 +67,21 @@ public class ChessBoard {
         return false;
     }
 
-    // TODO #8: return the number of queens currently in the chess board
+    // TODOd #8: return the number of queens currently in the chess board
     public int queens() {
-        return 0;
+        int count = 0;
+        for(int i = 0; i < board.length; i++)
+            for(int j = 0; j < board.length; j++)
+                if(board[i][j])
+                    count++;
+        return count;
     }
 
-    // TODO #9: return true/false depending whether the chess board is solved (i.e., the chess board is valid and the number of queens is equal to the board's size)
+    // TODOd #9: return true/false depending whether the chess board is solved (i.e., the chess board is valid and the number of queens is equal to the board's size)
     public boolean isSolved() {
+        if(isValid())
+            if(queens() == board.length)
+                return true;
         return false;
     }
 
