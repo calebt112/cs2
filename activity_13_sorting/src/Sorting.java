@@ -53,7 +53,7 @@ public class Sorting {
 
     // TODO #3: implement the insertion sort algorithm
     public static void insertionSort(int data[]) {
-        
+
     }
 
 
@@ -82,7 +82,7 @@ public class Sorting {
         // perform various sorts using the different sorting algorithms implemented above
         System.out.println(Arrays.toString(data));
         //bubbleSort(data);
-        selectionSort(data);
+        //selectionSort(data);
 
     }
     
