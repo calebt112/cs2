@@ -51,7 +51,7 @@ public class Sorting {
         }
     }
 
-    // TODO #3: implement the insertion sort algorithm
+    // TODOd #3: implement the insertion sort algorithm
     public static void insertionSort(int data[]) {
         for (int i = 0; i < data.length - 1; i++) {
             for (int j = i; j >= 0; j--) {
@@ -68,19 +68,39 @@ public class Sorting {
     }
 
 
-    // TODO #4: implement the partition part of the quick sort algorithm
+    // TODOd #4: implement the partition part of the quick sort algorithm
     public static int partition(int data[], int start, int end) {
-        return 0;
+        int i = start;
+        for (int j = start; j < end; j++){
+            if(data[j] < data[end]){
+                int temp = data[i];
+                data[i] = data[j];
+                data[j] = temp;
+                i++;
+            }
+        }
+        int temp = data[i];
+        data[i] = data[end];
+        data[end] = temp;
+        System.out.println(Arrays.toString(data));
+        System.out.println("partition: " + i);
+        return i;
     }
 
-    // TODO #5: implement the quick sort algorithm
+    // TODOd #5: implement the quick sort algorithm
     public static void quickSort(int data[], int start, int end) {
-        
+        if(start < end){
+            int pivot = partition(data, start, end);
+            quickSort(data, start, pivot-1);
+            quickSort(data, pivot, end);
+        }
     }
 
     // TODO #6: implement the merge part of the merge sort algorithm
     public static void merge(int data[], int begin, int middle, int end) {
-        
+        middle = (begin + end) / 2;
+        int left[] = new int[middle - begin + 1];
+        int right[] = new int[end - middle];
     }
 
     // TODO #7: implement the merge sort algorithm
@@ -94,8 +114,8 @@ public class Sorting {
         System.out.println(Arrays.toString(data));
         //bubbleSort(data);
         //selectionSort(data);
-        insertionSort(data);
-
+        //insertionSort(data);
+        //quickSort(data, 0, data.length-1);
     }
     
 }
