@@ -53,13 +53,48 @@ public class ChessBoard {
     // TODO (suggested): return true/false depending whether the chess board configuration passes the diagonal test
     // (i.e., no queen is attacking another on any diagonal)
     private boolean checkDiagonals() {
-        return false;
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board.length; j++) {
+                if (board[i][j] == true) {                  // if there's a queen at (i,j)
+                    for (int k = 1; k < board.length; k++) {
+                        if (i+k < board.length && j+k < board.length && board[i+k][j+k] == true) {
+                            return false; // same diagonal to the bottom-right
+                        }
+                        if (i-k >= 0 && j+k < board.length && board[i-k][j+k] == true) {
+                            return false; // same diagonal to the top-right
+                        }
+                        if (i+k < board.length && j-k >= 0 && board[i+k][j-k] == true) {
+                            return false; // same diagonal to the bottom-left
+                        }
+                        if (i-k >= 0 && j-k >= 0 && board[i-k][j-k] == true) {
+                            return false; // same diagonal to the top-left
+                        }
+                    }
+                }
+            }
+        }
+        return true; // no two queens on the same diagonal
     }
 
     // TODO (suggested): return true/false depending whether the chess board configuration passes the row/column test
     // (i.e., no queen is attacking another on any row/column)
     private boolean checkRowsColumns() {
-        return false;
+        for (int i = 0; i < board.length; i++) {
+            int queensInRow = 0;
+            int queensInColumn = 0;
+            for (int j = 0; j < board.length; j++) {
+                if (board[i][j] == true) {
+                    queensInRow++; // increment count of queens in this row
+                }
+                if (board[j][i] == true) {
+                    queensInColumn++; // increment count of queens in this column
+                }
+            }
+            if (queensInRow > 1 || queensInColumn > 1) {
+                return false; // more than one queen in this row or column
+            }
+        }
+        return true; // no two queens on the same row or column
     }
 
     // TODO #7: return true/false depending whether the chess board is valid (i.e., no queen is attacking any other queen)
@@ -77,7 +112,7 @@ public class ChessBoard {
         return count;
     }
 
-    // TODOd #9: return true/false depending whether the chess board is solved (i.e., the chess board is valid and the number of queens is equal to the board's size)
+    // TODO #9: return true/false depending whether the chess board is solved (i.e., the chess board is valid and the number of queens is equal to the board's size)
     public boolean isSolved() {
         if(isValid())
             if(queens() == board.length)
@@ -117,11 +152,18 @@ public class ChessBoard {
         return out;
     }
 
-//    public static void main(String[] args) {
-//        ChessBoard cb1 = new ChessBoard(4);
-//        ChessBoard cb2 = new ChessBoard();
-//
-//        System.out.println(cb1.size());
-//        System.out.println(cb2.size());
-//    }
+    public static void main(String[] args) {
+        ChessBoard cb1 = new ChessBoard(5);
+        cb1.setQueen(0, 0);
+        cb1.setQueen(2, 2);
+//        cb1.setQueen(2, 4);
+//        cb1.setQueen(3, 1);
+//        cb1.setQueen(4, 3);
+
+        System.out.println(cb1);
+        System.out.println(cb1.checkRowsColumns());
+        System.out.println(cb1.checkDiagonals());
+        System.out.println(cb1.isValid());
+
+    }
 }
