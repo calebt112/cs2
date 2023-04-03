@@ -1,8 +1,9 @@
 ]/*
  * CS2050 - Computer Science II - Fall 2022
  * Instructor: Thyago Mota
+ */
  * Description: Homework 06 - Sorting Objects
- * Student name:
+ * Student name: Caleb Thompson
  */
 
 public class InstagramUser implements Comparable<InstagramUser> {
@@ -16,10 +17,15 @@ public class InstagramUser implements Comparable<InstagramUser> {
         this.followers = followers;
     }
 
-    // TODO #1: override compareTo such that more popular users (higher number of followers) appear before less popular users
+    //TODO #1: override compareTo such that more popular users (higher number of followers) appear before less popular users
     @Override
     public int compareTo(InstagramUser other) {
-        return 0;
+        if(this.followers > other.followers)
+            return 1;
+        else if(this.followers < other.followers)
+            return -1;
+        else
+            return 0;
     }
 
     @Override
@@ -30,8 +36,7 @@ public class InstagramUser implements Comparable<InstagramUser> {
                 '}';
     }
 
-    // TODO #2: adapt partition so it would work with any Comparable array
-    // hint: change the type of data from int to Comparable
+    // TODO #2: adapt partition so it would work with any Comparable array hint: change the type of data from int to Comparable
     private static int partition(int data[], int start, int end) {
         int pivot = end;
         int partition = start;
