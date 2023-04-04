@@ -1,7 +1,6 @@
-]/*
+/*
  * CS2050 - Computer Science II - Fall 2022
  * Instructor: Thyago Mota
- */
  * Description: Homework 06 - Sorting Objects
  * Student name: Caleb Thompson
  */
@@ -9,7 +8,7 @@
 public class InstagramUser implements Comparable<InstagramUser> {
 
     private String username;
-    private int    followers;
+    private int followers;
 
     public InstagramUser(String username, int followers) throws InstantiationException {
         this.username = username;
@@ -17,12 +16,12 @@ public class InstagramUser implements Comparable<InstagramUser> {
         this.followers = followers;
     }
 
-    //TODO #1: override compareTo such that more popular users (higher number of followers) appear before less popular users
+    // TODO #1: override compareTo such that more popular users (higher number of followers) appear before less popular users
     @Override
     public int compareTo(InstagramUser other) {
-        if(this.followers > other.followers)
+        if (this.followers > other.followers)
             return 1;
-        else if(this.followers < other.followers)
+        else if (this.followers < other.followers)
             return -1;
         else
             return 0;
