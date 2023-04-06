@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f5e981e9-9577-4093-be20-59c51ae85449" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../activity_13_sorting/out/production/activity_13_sorting/Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_13_sorting/out/production/activity_13_sorting/Sorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_13_sorting/src/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_13_sorting/src/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/hwk_06_sorting_objects.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hwk_06_sorting_objects.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/InstagramUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/InstagramUser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,19 +20,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2NydtoUAJqwB5k6PkOI3CZFxK4w" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/caleb/Desktop/CS2/cs2/hwk_06_sorting_objects",
-    "settings.editor.selected.configurable": "preferences.toDoOptions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caleb/Desktop/CS2/cs2/hwk_06_sorting_objects&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.packagesearch.PackageSearchGeneralConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,5 +48,16 @@
       <updated>1680640473023</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -16,7 +16,7 @@ public class InstagramUser implements Comparable<InstagramUser> {
         this.followers = followers;
     }
 
-    // TODO #1: override compareTo such that more popular users (higher number of followers) appear before less popular users
+    // TODOd #1: override compareTo such that more popular users (higher number of followers) appear before less popular users
     @Override
     public int compareTo(InstagramUser other) {
         if (this.followers > other.followers)
@@ -35,36 +35,37 @@ public class InstagramUser implements Comparable<InstagramUser> {
                 '}';
     }
 
-    // TODO #2: adapt partition so it would work with any Comparable array hint: change the type of data from int to Comparable
-    private static int partition(int data[], int start, int end) {
+    // TODOd #2: adapt partition so it would work with any Comparable array hint: change the type of data from int to Comparable
+    private static <T extends Comparable<T>> int partition(T[] data, int start, int end) {
         int pivot = end;
         int partition = start;
         int current = start;
         while (current < pivot) {
-            // hint: change the if expression
-            if (data[current] < data[pivot]) {
-                int temp = data[partition]; // hint: change the type of data from int to Comparable
+            if (data[current].compareTo(data[pivot]) < 0) {
+                T temp = data[partition];
                 data[partition] = data[current];
                 data[current] = temp;
                 partition++;
             }
             current++;
         }
-        int temp = data[pivot]; // change the type of data from int to Comparable
+        T temp = data[pivot];
         data[pivot] = data[partition];
         data[partition] = temp;
         return partition;
     }
 
-    // TODO #3: adapt the quick sort algorithm so it would work with any Comparable array
+
+    // TODOd #3: adapt the quick sort algorithm so it would work with any Comparable array
     // hint: change the type of data from int to Comparable
-    public static void quickSort(int data[], int start, int end) {
+    public static <T extends Comparable<T>> void quickSort(T[] data, int start, int end) {
         if (start < end) {
             int partition = partition(data, start, end);
             quickSort(data, start, partition - 1);
             quickSort(data, partition + 1, end);
         }
     }
+
 
     public static void main(String[] args) throws InstantiationException {
         // TODO #4: create a static array of 5 instagram accounts
