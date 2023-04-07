@@ -96,26 +96,52 @@ public class Sorting {
         }
     }
 
-    // TODO #6: implement the merge part of the merge sort algorithm
+    // TODOd #6: implement the merge part of the merge sort algorithm
     public static void merge(int data[], int begin, int middle, int end) {
         middle = (begin + end) / 2;
         int left[] = new int[middle - begin + 1];
         int right[] = new int[end - middle];
+        for(int i = 0; i < left.length; i++){
+            left[i] = data[begin + i];
+        }
+        for(int i = 0; i < right.length; i++){
+            right[i] = data[middle + i + 1];
+        }
+        int i = 0, j = 0, k = begin;
+        while(i <left.length && j < right.length){
+            if(left[i] < right[j])
+                data[k++] = left[i++];
+            else
+                data[k++] = right[j++];
+        }
+        while(i < left.length)
+            data[k++] = left[i++];
+        while(j < right.length)
+            data[k++] = right[j++];
+        System.out.println(Arrays.toString(data));
     }
 
     // TODO #7: implement the merge sort algorithm
     public static void mergeSort(int data[], int begin, int end) {
-        
+        if(begin < end) {
+            int middle = (begin + end) / 2;
+            mergeSort(data, begin, middle);
+            mergeSort(data, middle + 1, end);
+            merge(data, begin, middle, end);
+        }
+
     }
 
     public static void main(String[] args) {
-         int data[] = {13, 12, 84, 79, 10, 77, 56, 1, 34, 27, 3};
+         //int data[] = {13, 12, 84, 79, 10, 77, 56, 1, 34, 27, 3};
+        int data[] = {23, 7, 8, 19, 10};
         // perform various sorts using the different sorting algorithms implemented above
         System.out.println(Arrays.toString(data));
         //bubbleSort(data);
         //selectionSort(data);
         //insertionSort(data);
-        //quickSort(data, 0, data.length-1);
+        quickSort(data, 0, data.length-1);
+        //mergeSort(data, 0, data.length-1);
     }
     
 }
