@@ -4,18 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="856be85d-d024-4d64-a8a8-b612c06d4d11" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../hwk_06_sorting_objects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../hwk_06_sorting_objects/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/ChessBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/ChessBoardTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/ChessPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/LinkedList$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/LinkedList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/NQueens.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/Stack.class" beforeDir="false" />
+    <list default="true" id="856be85d-d024-4d64-a8a8-b612c06d4d11" name="Changes" comment="ChessBoard class todos completed and tested">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/ChessBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_02_nqueens/ChessBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prg_02_nqueens/NQueens.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_02_nqueens/NQueens.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ChessBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ChessBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NQueens.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NQueens.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +38,7 @@
     "last_opened_file_path": "D:/CS2/cs2/prg_02_nqueens"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.NQueens">
     <configuration name="ChessBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ChessBoard" />
       <module name="prg_02_nqueens" />
@@ -52,8 +46,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="NQueens" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="NQueens" />
+      <module name="prg_02_nqueens" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.NQueens" />
         <item itemvalue="Application.ChessBoard" />
       </list>
     </recent_temporary>
@@ -67,6 +69,18 @@
       <option name="presentableId" value="Default" />
       <updated>1680881452132</updated>
     </task>
+    <task id="LOCAL-00001" summary="ChessBoard class todos completed and tested">
+      <created>1680883630811</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1680883630811</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ChessBoard class todos completed and tested" />
+    <option name="LAST_COMMIT_MESSAGE" value="ChessBoard class todos completed and tested" />
   </component>
 </project>

@@ -40,7 +40,44 @@ public class NQueens extends JFrame {
     // configuration on the GUI, pausing SLEEP_TIME ms between configurations; this method should also
     // return the total number of chess board configurations found
     public int run() {
-        return 0;
+        Stack<ChessBoard> stack = new Stack<>();
+        ChessBoard initialBoard = new ChessBoard(size);
+        stack.push(initialBoard);
+        int count = 0;
+
+        while (!stack.isEmpty()) {
+            ChessBoard currentBoard = null;
+            try {
+                currentBoard = stack.pop();
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+            if (currentBoard.isSolved()) {
+                count++;
+                chessPanel.updateChessBoard(currentBoard);
+                repaint();
+                try {
+                    Thread.sleep(SLEEP_TIME);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                int row = currentBoard.queens();
+                for (int col = 0; col < size; col++) {
+                    try {
+                        ChessBoard newBoard = (ChessBoard) currentBoard.clone();
+                        newBoard.setQueen(row, col);
+                        if (newBoard.isValid()) {
+                            stack.push(newBoard);
+                        }
+                    } catch (CloneNotSupportedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }
+
+        return count;
     }
 
     public static void main(String[] args) throws IOException, CloneNotSupportedException {

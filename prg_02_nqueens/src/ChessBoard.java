@@ -165,23 +165,4 @@ public class ChessBoard {
         return out;
     }
 
-    public static void main(String[] args) {
-        ChessBoard board = new ChessBoard(5);
-        board.setQueen(0, 0);
-        board.setQueen(1, 2);
-        board.setQueen(2, 4);
-        board.setQueen(3, 1);
-        board.setQueen(3, 3);
-
-        System.out.println(board);
-        System.out.println(board.isSolved());
-
-
-
-
-
-
     }
-
-
-}
