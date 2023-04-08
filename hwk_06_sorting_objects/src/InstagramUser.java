@@ -2,7 +2,7 @@
  * CS2050 - Computer Science II - Fall 2022
  * Instructor: Thyago Mota
  * Description: Homework 06 - Sorting Objects
- * Student name:
+ * Student name: Caleb Thompson
  */
 import java.util.Arrays;
 public class InstagramUser implements Comparable<InstagramUser> {
