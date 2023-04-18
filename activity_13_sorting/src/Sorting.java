@@ -92,7 +92,7 @@ public class Sorting {
         if(start < end){
             int pivot = partition(data, start, end);
             quickSort(data, start, pivot-1);
-            quickSort(data, pivot, end);
+            quickSort(data, pivot + 1, end);
         }
     }
 
@@ -134,13 +134,13 @@ public class Sorting {
 
     public static void main(String[] args) {
          //int data[] = {13, 12, 84, 79, 10, 77, 56, 1, 34, 27, 3};
-        int data[] = {23, 7, 8, 19, 10};
+        int data[] = {35, 7, 22, 15, 31};
         // perform various sorts using the different sorting algorithms implemented above
         System.out.println(Arrays.toString(data));
         //bubbleSort(data);
         //selectionSort(data);
-        //insertionSort(data);
-        quickSort(data, 0, data.length-1);
+        insertionSort(data);
+        //quickSort(data, 0, data.length-1);
         //mergeSort(data, 0, data.length-1);
     }
     

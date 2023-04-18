@@ -10,18 +10,17 @@ public class BSTDriver {
 
     // TODO: create a binary tree and add the data elements to reproduce the tree described in the lecture about trees; don't forget to print your tree at the end
     public static void main(String[] args) {
-
-        //manual creation of a binary tree
-        BSTNode<Integer> root = new BSTNode<>(25);
-        BSTNode<Integer> N10 = new BSTNode<>(10);
-        BSTNode<Integer> N5 = new BSTNode<>(5);
-        BSTNode<Integer> N50 = new BSTNode<>(50);
-        BSTNode<Integer> N75 = new BSTNode<>(75);
-
-        root.setLeft(N10);
-        root.setRight(N50);
-        N10.setLeft(N5);
-        N50.setRight(N75);
-
+        BST<Integer> bst = new BST<>();
+        bst.add(10);
+        bst.add(5);
+        bst.add(15);
+        bst.add(3);
+        bst.add(7);
+        bst.add(12);
+        bst.add(17);
+        bst.add(1);
+        System.out.println(bst);
+        System.out.println(bst.search(3));
+        System.out.println(bst.search(4));
     }
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../activity_13_sorting/out/production/activity_13_sorting/Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_13_sorting/out/production/activity_13_sorting/Sorting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activity_13_sorting/src/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_13_sorting/src/Sorting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activity_14_bst/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_14_bst/src/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activity_14_bst/src/BSTDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_14_bst/src/BSTDriver.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2Oc4GuUevftsaxx6EwXdbUQRq4J" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/caleb/Desktop/CS2/cs2/prg_03_playlist"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="" />
+      <created>1681846444383</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681846444383</updated>
+    </task>
+    <servers />
+  </component>
+</project>
