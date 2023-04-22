@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../activity_13_sorting/out/production/activity_13_sorting/Sorting.class" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_13_sorting/out/production/activity_13_sorting/Sorting.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_13_sorting/src/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_13_sorting/src/Sorting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_14_bst/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_14_bst/src/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../activity_14_bst/src/BSTDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activity_14_bst/src/BSTDriver.java" afterDir="false" />
-    </list>
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="clean up" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,9 +20,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/caleb/Desktop/CS2/cs2/prg_03_playlist"
+    "last_opened_file_path": "D:/CS2/cs2/prg_03_playlist"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,6 +35,18 @@
       <option name="presentableId" value="Default" />
       <updated>1681846444383</updated>
     </task>
+    <task id="LOCAL-00001" summary="clean up">
+      <created>1681941316129</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1681941316129</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
 </project>
