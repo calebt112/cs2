@@ -108,7 +108,7 @@ public class BST<E extends Comparable<E>> {
             return 1;
     }
 
-    // TODO: implement getLeftMost
+    // TODOd: implement getLeftMost
     private BSTNode<E> getLeftMost(final BSTNode<E> current) {
         // base case
         if (current.getLeft() == null)
@@ -118,13 +118,55 @@ public class BST<E extends Comparable<E>> {
             return getLeftMost(current.getLeft());
     }
 
-    // TODO: implement removeRecursively
+    // TODOd: implement removeRecursively
     private BSTNode<E> removeRecursively(final BSTNode<E> current, final E value) {
-        return null;
+        if (current == null)
+            return null;
+        // we found the element to be removed!
+        if (value.compareTo(current.getValue()) == 0) {
+            int numberChildren = numberChildren(current);
+            // #children == 0
+            if (numberChildren == 0)
+                return null;
+                // #children == 1
+            else if (numberChildren == 1) {
+                // the child is on the left!
+                if (current.getLeft() != null) {
+                    BSTNode<E> temp = current.getLeft();
+                    current.setLeft(null);
+                    return temp;
+                }
+                // the child is on the right!
+                else {
+                    BSTNode<E> temp = current.getRight();
+                    current.setRight(null);
+                    return temp;
+                }
+            }
+            // #children = 2
+            else {
+                BSTNode<E> toBeReturned = current.getRight();
+                BSTNode<E> leftMost = getLeftMost(toBeReturned);
+                leftMost.setLeft(current.getLeft());
+                current.setLeft(null);
+                current.setRight(null);
+                return toBeReturned;
+            }
+        }
+        // deciding going left
+        if (value.compareTo(current.getValue()) < 0) {
+            current.setLeft(removeRecursively(current.getLeft(), value));
+            return current;
+        }
+        // deciding going right
+        else {
+            current.setRight(removeRecursively(current.getRight(), value));
+            return current;
+        }
     }
 
-    // TODO: implement remove
+    // TODOd: implement remove
     public void remove(final E value) {
-
+        root = removeRecursively(root, value);
     }
 }
