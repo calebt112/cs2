@@ -14,10 +14,15 @@ public class Song implements Comparable<Song> {
     public static final int MIN_RANK   = 1;
     public static final int MAX_RANK   = 5;
 
-    // TODO #1: implement the constructor
+    // TODOd #1: implement the constructor
     // if rank is invalid, set it to MIN_RANK
     public Song(String title, String artist, int rank) {
-
+        this.title = title;
+        this.artist = artist;
+        if(rank >= MIN_RANK && rank <= MAX_RANK)
+            this.rank = rank;
+        else
+            this.rank = MIN_RANK;
     }
 
     public String getTitle() {
@@ -32,10 +37,15 @@ public class Song implements Comparable<Song> {
         return rank;
     }
 
-    // TODO #2: implement the compareTo override based on song titles (alphabetically)
+    // TODOd #2: implement the compareTo override based on song titles (alphabetically)
     @Override
     public int compareTo(Song other) {
-        return 0;
+        if(compareTo(other) == 0)
+            return 0;
+        else if(compareTo(other) > 0)
+            return 1;
+        else
+            return -1;
     }
 
     @Override
