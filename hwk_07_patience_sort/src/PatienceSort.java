@@ -1,6 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
+ * Student: Caleb Thompson
  * Description: Homework 07 - PatienceSort
  */
 
@@ -14,9 +15,9 @@ public class PatienceSort {
         // this is the list of stacks (each a stack of integers)
         LinkedList<Stack<Integer>> stacks = new LinkedList<>();
 
-        // TODO #1: loop through the data array and get the array's current element
-        // TODO #2: at each iteration, find a stack available and push the array's current element onto it
-        // TODO #3: if there isn't a stack available, create a new one, push the data array's current element onto it, and then append the newly created stack to the list of stacks.
+        // TODOd #1: loop through the data array and get the array's current element
+        // TODOd #2: at each iteration, find a stack available and push the array's current element onto it
+        // TODOd #3: if there isn't a stack available, create a new one, push the data array's current element onto it, and then append the newly created stack to the list of stacks.
 
         for (int i = 0; i < data.length; i++) {
             int current = data[i];

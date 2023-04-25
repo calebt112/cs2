@@ -69,7 +69,7 @@ public class LinkedList<E> implements Iterable<E> {
         return current.getValue();
     }
 
-    // TODO: set value to location at index
+    // TODOd: set value to location at index
     public void set(int index, E value) {
         if (index < 0 || isEmpty())
             throw new ArrayIndexOutOfBoundsException();
@@ -81,7 +81,7 @@ public class LinkedList<E> implements Iterable<E> {
         current.setValue(value);
     }
 
-    // TODO: insert value at the given index location
+    // TODOd: insert value at the given index location
     // throw an exception if index is invalid
     public void insert(int index, E value) {
         if (index < 0 || isEmpty())
@@ -101,7 +101,7 @@ public class LinkedList<E> implements Iterable<E> {
         }
     }
 
-    // TODO: removes the element at the given index location
+    // TODOd: removes the element at the given index location
     // throw an exception if index is invalid
     public void remove(int index) {
         if (index < 0 || isEmpty())
