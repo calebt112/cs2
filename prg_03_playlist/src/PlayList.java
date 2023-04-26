@@ -46,7 +46,7 @@ public class PlayList {
         }
     }
 
-    // TODO #6: open the csv file for writing and iterates over the bst object, writing its songs into the csv file
+    // TODOd #6: open the csv file for writing and iterates over the bst object, writing its songs into the csv file
     public void saveSongs() throws FileNotFoundException {
         try {
             PrintWriter out = new PrintWriter(new FileOutputStream(FILE_NAME));
@@ -93,9 +93,13 @@ public class PlayList {
             System.out.println("No song with the title \"" + title + "\" was found!");
     }
 
-    // TODO #10: remove a song given its title
+    // TODOd #10: remove a song given its title
     public void removeSong() {
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Title? ");
+        String title = sc.nextLine();
+        Song song = new Song(title, "", 0);
+        bst.remove(song);
     }
 
     public static int getOption() {
