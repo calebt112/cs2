@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="Todo #1 #2 completed" />
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="Todo #3 and #4 completed">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,11 +48,27 @@
       <option name="project" value="LOCAL" />
       <updated>1681941316129</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Todo #1 #2 completed">
+      <created>1682537776666</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682537776666</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Todo #3 and #4 completed">
+      <created>1682538706395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1682538706395</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="Todo #1 #2 completed" />
+    <MESSAGE value="Todo #3 and #4 completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Todo #3 and #4 completed" />
   </component>
 </project>

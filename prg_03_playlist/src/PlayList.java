@@ -28,7 +28,22 @@ public class PlayList {
 
     // TODO #5: open the csv file for reading and parse all songs into the (already instantiated) BST object (you must use the bst instance variable)
     private void loadSongs() throws FileNotFoundException {
-
+        try {
+            Scanner in = new Scanner(new FileInputStream(FILE_NAME));
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                String data[] = line.split(",");
+                String title = data[0];
+                String artist = data[1];
+                String rank = data[2];
+                Song song = new Song(title, artist, rank);
+                bst.add(song);
+            }
+            in.close();
+        }
+        catch (FileNotFoundException ex) {
+            System.out.println("Error: file not found!");
+        }
     }
 
     // TODO #6: open the csv file for writing and iterates over the bst object, writing its songs into the csv file
