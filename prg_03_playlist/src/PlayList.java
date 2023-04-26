@@ -81,9 +81,16 @@ public class PlayList {
 
     }
 
-    // TODO #9: search for a song in the playlist by title
+    // TODOd #9: search for a song in the playlist by title
     public void searchSong() {
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Title? ");
+        String title = sc.nextLine();
+        Song song = new Song(title, "", 0);
+        if (bst.search(song))
+            System.out.println("A song with the title \"" + title + "\" was found!");
+        else
+            System.out.println("No song with the title \"" + title + "\" was found!");
     }
 
     // TODO #10: remove a song given its title

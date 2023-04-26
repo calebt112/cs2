@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #5 iw">
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #5 &amp; #7 Completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682539534133</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="TODO #5 &amp; #7 Completed">
+      <created>1682543462947</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1682543462947</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -92,6 +98,7 @@
     <MESSAGE value="Todo #1 #2 completed" />
     <MESSAGE value="Todo #3 and #4 completed" />
     <MESSAGE value="TODO #5 iw" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO #5 iw" />
+    <MESSAGE value="TODO #5 &amp; #7 Completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO #5 &amp; #7 Completed" />
   </component>
 </project>
