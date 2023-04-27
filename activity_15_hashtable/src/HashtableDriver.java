@@ -15,10 +15,17 @@ public class HashtableDriver {
 
     // TODO: create a hashtable from FILE_NAME
     public static void main(String[] args) throws FileNotFoundException {
-        Hashtable<Integer, String> ht = new Hashtable<>();
-        ht.put(56, "john");
-        ht.put(11, "mary");
-        ht.put(67, "anna");
+        Hashtable<Integer, Student> ht = new Hashtable<>();
+        Scanner sc = new Scanner(new FileInputStream(FILE_NAME));
+        while (sc.hasNextLine()) {
+            String line = sc.nextLine();
+            String data[] = line.split(",");
+            int id = Integer.parseInt(data[0]);
+            String name = data[1];
+            Student student = new Student(id, name);
+            ht.put(id, student);
+        }
+        sc.close();
         System.out.println(ht);
     }
 }
