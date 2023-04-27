@@ -17,7 +17,7 @@ public class HashtableDriver {
     public static void main(String[] args) throws FileNotFoundException {
         Hashtable<Integer, String> ht = new Hashtable<>();
         ht.put(56, "john");
-        ht.put(12, "mary");
+        ht.put(11, "mary");
         ht.put(67, "anna");
         System.out.println(ht);
     }
