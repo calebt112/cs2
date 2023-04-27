@@ -84,7 +84,7 @@ public class CollectionsDriver {
         treeSet.add("Paula");
         System.out.println("TreeSet: " + treeSet);
 
-        //To Dod: Stacks
+        //TODOd: Stacks
         Stack<String> stack = new Stack<>();
         stack.push("Joe");
         stack.push("Carla");
@@ -93,7 +93,7 @@ public class CollectionsDriver {
         stack.push("Paula");
         System.out.println("Stack: " + stack);
 
-        //To Dod: Queues
+        //TODOd: Queues
         Queue<String> queue = new LinkedList<>();
         queue.add("Joe");
         queue.add("Carla");
