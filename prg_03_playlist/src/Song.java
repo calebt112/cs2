@@ -40,12 +40,12 @@ public class Song implements Comparable<Song> {
     // TODOd #2: implement the compareTo override based on song titles (alphabetically)
     @Override
     public int compareTo(Song other) {
-        if(compareTo(other) == 0)
+        if (title.compareTo(other.getTitle()) == 0)
             return 0;
-        else if(compareTo(other) > 0)
-            return 1;
-        else
+        else if (title.compareTo(other.getTitle()) < 0)
             return -1;
+        else
+            return 1;
     }
 
     @Override

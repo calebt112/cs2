@@ -117,14 +117,21 @@ public class BST<E extends Comparable<E>> implements Iterable<E> {
         root = removeRecursively(root, value);
     }
 
-    // TODO #3: implement the clearRecursively helper method
+    // TODOd #3: implement the clearRecursively helper method
     private void clearRecursively(BSTNode current) {
-
+        while(root != null) {
+            clearRecursively(current.getLeft());
+            clearRecursively(current.getRight());
+            // don't know if setLeft and setRight are necessary
+            current.setLeft(null);
+            current.setRight(null);
+            current = null;
+        }
     }
 
-    // TODO #4: implement the clear method (based on clearRecursively)
+    // TODOd #4: implement the clear method (based on clearRecursively)
     public void clear() {
-
+        clearRecursively(root);
     }
 
     @Override

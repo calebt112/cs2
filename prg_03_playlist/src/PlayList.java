@@ -26,14 +26,36 @@ public class PlayList {
         loadSongs();
     }
 
-    // TODO #5: open the csv file for reading and parse all songs into the (already instantiated) BST object (you must use the bst instance variable)
+    // TODOd #5: open the csv file for reading and parse all songs into the (already instantiated) BST object (you must use the bst instance variable)
     private void loadSongs() throws FileNotFoundException {
-
+        try {
+            Scanner in = new Scanner(new FileInputStream(FILE_NAME));
+            while (in.hasNextLine()) {
+                String line = in.nextLine();
+                String data[] = line.split(",");
+                String title = data[0];
+                String artist = data[1];
+                int rank = Integer.parseInt(data[2]);
+                Song song = new Song(title, artist, rank);
+                bst.add(song);
+            }
+            in.close();
+        }
+        catch (FileNotFoundException ex) {
+            System.out.println("Error: file not found!");
+        }
     }
 
-    // TODO #6: open the csv file for writing and iterates over the bst object, writing its songs into the csv file
+    // TODOd #6: open the csv file for writing and iterates over the bst object, writing its songs into the csv file
     public void saveSongs() throws FileNotFoundException {
-
+        try {
+            PrintWriter out = new PrintWriter(new FileOutputStream(FILE_NAME));
+            out.println(bst);
+            out.close();
+        }
+        catch (FileNotFoundException ex) {
+            System.out.println("Error: file not found!");
+        }
     }
 
     @Override
@@ -41,9 +63,17 @@ public class PlayList {
         return bst.toString();
     }
 
-    // TODO #7: read all info for a song to be added into the binary tree
+    // TODOd #7: read all info for a song to be added into the binary tree
     public void addSong() {
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Title? ");
+        String title = sc.nextLine();
+        System.out.print("Artist? ");
+        String artist = sc.nextLine();
+        System.out.print("Rank? ");
+        int rank = Integer.parseInt(sc.nextLine());
+        Song song = new Song(title, artist, rank);
+        bst.add(song);
     }
 
     // TODO #8: clear the bst after a confirmation
@@ -51,14 +81,25 @@ public class PlayList {
 
     }
 
-    // TODO #9: search for a song in the playlist by title
+    // TODOd #9: search for a song in the playlist by title
     public void searchSong() {
-
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Title? ");
+        String title = sc.nextLine();
+        Song song = new Song(title, "", 0);
+        if (bst.search(song))
+            System.out.println("A song with the title \"" + title + "\" was found!");
+        else
+            System.out.println("No song with the title \"" + title + "\" was found!");
     }
 
-    // TODO #10: remove a song given its title
+    // TODOd #10: remove a song given its title
     public void removeSong() {
-        
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Title? ");
+        String title = sc.nextLine();
+        Song song = new Song(title, "", 0);
+        bst.remove(song);
     }
 
     public static int getOption() {
