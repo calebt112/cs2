@@ -83,5 +83,23 @@ public class CollectionsDriver {
         treeSet.add("Zion");
         treeSet.add("Paula");
         System.out.println("TreeSet: " + treeSet);
+
+        //To Dod: Stacks
+        Stack<String> stack = new Stack<>();
+        stack.push("Joe");
+        stack.push("Carla");
+        stack.push("Paula");
+        stack.push("Zion");
+        stack.push("Paula");
+        System.out.println("Stack: " + stack);
+
+        //To Dod: Queues
+        Queue<String> queue = new LinkedList<>();
+        queue.add("Joe");
+        queue.add("Carla");
+        queue.add("Paula");
+        queue.add("Zion");
+        queue.add("Paula");
+        System.out.println("Queue: " + queue);
     }
 }
