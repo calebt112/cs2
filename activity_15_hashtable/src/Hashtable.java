@@ -52,7 +52,14 @@ public class Hashtable<K,V> implements Iterable<V> {
 
     // TODOd: implement method below
     public V get(K key) {
-    return null;
+        int index = hash(key);
+        HashNode<K, V> current = table[index];
+        while (current != null) {
+            if (current.getKey().equals(key))
+                return current.getValue();
+            current = current.getNext();
+        }
+        return null;
     }
 
     private String linkedListToString(HashNode<K,V> head) {
@@ -62,7 +69,7 @@ public class Hashtable<K,V> implements Iterable<V> {
             out += current + " ";
             current = current.getNext();
         }
-        // optional (get rid off the last space)
+        // optional (get rid of the last space)
         out = out.trim();
         return out;
     }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #8 - needs to be completed&#10;All other TODO's are complete" />
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #9 complete" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +26,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/CS2/cs2/prg_03_playlist&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/caleb/Desktop/CS2/cs2/prg_03_playlist&quot;
   }
 }</component>
   <component name="RunManager">
@@ -94,28 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682544129792</updated>
     </task>
-    <task id="LOCAL-00007" summary="TODO #8 - needs to be completed&#10;All other TODO's are complete">
-      <created>1682544672924</created>
+    <task id="LOCAL-00007" summary="TODO #9 complete">
+      <created>1682714526106</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1682544672924</updated>
+      <updated>1682714526106</updated>
     </task>
-    <task id="LOCAL-00008" summary="TODO #8 - needs to be completed&#10;All other TODO's are complete">
-      <created>1682714395153</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1682714395153</updated>
-    </task>
-    <task id="LOCAL-00009" summary="TODO #8 - needs to be completed&#10;All other TODO's are complete">
-      <created>1682714458064</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1682714458064</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -125,7 +111,6 @@
     <MESSAGE value="TODO #5 iw" />
     <MESSAGE value="TODO #5 &amp; #7 Completed" />
     <MESSAGE value="TODO #9 complete" />
-    <MESSAGE value="TODO #8 - needs to be completed&#10;All other TODO's are complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO #8 - needs to be completed&#10;All other TODO's are complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="TODO #9 complete" />
   </component>
 </project>
