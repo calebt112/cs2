@@ -1,7 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
- * Student(s):
+ * Student(s): Caleb Thompson
  * Description: The BST class
  */
 
@@ -119,14 +119,12 @@ public class BST<E extends Comparable<E>> implements Iterable<E> {
 
     // TODOd #3: implement the clearRecursively helper method
     private void clearRecursively(BSTNode current) {
-        while(root != null) {
-            clearRecursively(current.getLeft());
-            clearRecursively(current.getRight());
-            // don't know if setLeft and setRight are necessary
-            current.setLeft(null);
-            current.setRight(null);
-            current = null;
-        }
+        if (current == null)
+            return;
+        clearRecursively(current.getLeft());
+        clearRecursively(current.getRight());
+        current.setLeft(null);
+        current.setRight(null);
     }
 
     // TODOd #4: implement the clear method (based on clearRecursively)
