@@ -1,7 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
- * Student(s): Caleb Thompson
+ * Student(s): Caleb Thompson, Chris Hammer
  * Description: The Song class
  */
 
@@ -40,12 +40,13 @@ public class Song implements Comparable<Song> {
     // TODOd #2: implement the compareTo override based on song titles (alphabetically)
     @Override
     public int compareTo(Song other) {
-        if (title.compareTo(other.getTitle()) == 0)
-            return 0;
-        else if (title.compareTo(other.getTitle()) < 0)
-            return -1;
-        else
-            return 1;
+        return title.compareTo(other.getTitle());
+//        if (title.compareTo(other.getTitle()) == 0)
+//            return 0;
+//        else if (title.compareTo(other.getTitle()) < 0)
+//            return -1;
+//        else
+//            return 1;
     }
 
     @Override

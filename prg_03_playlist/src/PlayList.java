@@ -1,7 +1,7 @@
 /*
  * CS2050 - Computer Science II - Spring 2023
  * Instructor: Thyago Mota
- * Student(s):
+ * Student(s): Caleb Thompson, Chris Hammer
  * Description: The PlayList class
  */
 
@@ -74,11 +74,15 @@ public class PlayList {
         int rank = Integer.parseInt(sc.nextLine());
         Song song = new Song(title, artist, rank);
         bst.add(song);
+        sc.close();
     }
 
-    // TODO #8: clear the bst after a confirmation
+    // TODOd #8: clear the bst after a confirmation
     public void clear() {
-
+        System.out.print("Are you sure? (y/n) ");
+        String option = sc.nextLine();
+        if (option.equals("y"))
+            bst.clear();
     }
 
     // TODOd #9: search for a song in the playlist by title

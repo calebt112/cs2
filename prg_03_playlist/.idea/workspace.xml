@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #9 complete" />
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #9 complete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prg_03_playlist/BST$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_03_playlist/BST$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prg_03_playlist/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_03_playlist/BST.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/prg_03_playlist/PlayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_03_playlist/PlayList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playlist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
