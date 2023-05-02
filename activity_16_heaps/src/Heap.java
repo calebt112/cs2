@@ -4,12 +4,14 @@
  * Description: Activity 16 - Heap class
  */
 
+import java.util.LinkedList;
+
 public class Heap<E extends Comparable<E>> {
 
     private E data[];
     private int size;
     private int order;
-    private static final int INITIAL_CAPACITY = 10;
+    private static final int INITIAL_CAPACITY = 100;
     public static final int ASCENDING  = 1;
     public static final int DESCENDING = 2;
 
@@ -153,23 +155,34 @@ public class Heap<E extends Comparable<E>> {
     }
 
     public static void main(String[] args) throws Exception {
-        // TODO #3: instantiate a heap and add the following elements: 18, 13, 5, 10, 1, 2, 20; then display the heap using toString
-        Heap<Integer> heap = new Heap<>(ASCENDING);
-        heap.add(18);
-        heap.add(13);
-        heap.add(5);
-        heap.add(10);
-        heap.add(1);
-        heap.add(2);
-        heap.add(20);
-        System.out.println(heap);
+//        // TODO #3: instantiate a heap and add the following elements: 18, 13, 5, 10, 1, 2, 20; then display the heap using toString
+//        Heap<Integer> heap = new Heap<>(ASCENDING);
+//        heap.add(18);
+//        heap.add(13);
+//        heap.add(5);
+//        heap.add(10);
+//        heap.add(1);
+//        heap.add(2);
+//        heap.add(20);
+//        System.out.println(heap);
+//
+//        while (true) {
+//            try {
+//                System.out.println("[" + heap.remove() + "] " + heap);
+//            } catch (Exception ex) {
+//                break;
+//            }
+//        }
 
-        while (true) {
-            try {
-                System.out.println("[" + heap.remove() + "] " + heap);
-            } catch (Exception ex) {
-                break;
-            }
-        }
+        // create a LinkedList of size 100 and add 100 random integers between 0 and 1000
+        LinkedList<Integer> list = new LinkedList<>();
+        for (int i = 0; i < 100; i++)
+            list.add((int) (Math.random() * 1000));
+
+        // TODO #4: instantiate a heap and add all elements from the linked list; then display the heap using toString
+        Heap<Integer> heap = new Heap<>(ASCENDING);
+        for (int i = 0; i < list.size(); i++)
+            heap.add(list.get(i));
+        System.out.println(heap);
     }
 }
