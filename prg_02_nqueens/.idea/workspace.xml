@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="856be85d-d024-4d64-a8a8-b612c06d4d11" name="Changes" comment="Exhaustive search implemented. Does not work on board size smaller than 8." />
+    <list default="true" id="856be85d-d024-4d64-a8a8-b612c06d4d11" name="Changes" comment="Exhaustive search implemented. Does not work on board size smaller than 8.">
+      <change beforePath="$PROJECT_DIR$/../prg_03_playlist/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prg_03_playlist/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +31,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/CS2/cs2/prg_02_nqueens"
   }
 }]]></component>

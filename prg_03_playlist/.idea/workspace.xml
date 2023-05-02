@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="TODO #9 complete">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_03_playlist/BST$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_03_playlist/BST$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_03_playlist/BST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_03_playlist/BST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/prg_03_playlist/PlayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/prg_03_playlist/PlayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/playlist.csv" beforeDir="false" afterPath="$PROJECT_DIR$/playlist.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayList.java" afterDir="false" />
-    </list>
+    <list default="true" id="50394448-c49f-41dd-957e-41be6faa227c" name="Changes" comment="All code recompleted with Chris" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -109,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682714526106</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="All code recompleted with Chris">
+      <created>1682807602824</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1682807602827</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -119,6 +118,7 @@
     <MESSAGE value="TODO #5 iw" />
     <MESSAGE value="TODO #5 &amp; #7 Completed" />
     <MESSAGE value="TODO #9 complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="TODO #9 complete" />
+    <MESSAGE value="All code recompleted with Chris" />
+    <option name="LAST_COMMIT_MESSAGE" value="All code recompleted with Chris" />
   </component>
 </project>
